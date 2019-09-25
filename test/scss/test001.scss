@@ -1,0 +1,128 @@
+@charset "UTF-8";
+.headers{
+    width:100%;
+    height:80px;
+    position:fixed;
+    top:0;
+    left:0;
+    background:white;
+    >div:nth-child(1){
+        width:100%;
+        height:8px;
+        background-color: #45a284;
+    }
+    >div:nth-child(2){
+        width:1190px;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        >img{
+            width: 112px;
+            height: 55px;
+        }
+    }
+}
+.nav{
+    display: flex;
+    align-items: center;
+    >a{
+        height:72px;
+        margin:0 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        >p{
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}
+.contents{
+    width:100%;
+    padding-top:80px;
+    .bans{
+        width:100%;
+        img{
+            width:100%;
+            min-width:1190px;
+        }
+    }
+}
+.menus{
+    width:100%;
+    font-size:0;
+    min-width:1190px;
+    >a{
+        width:calc(100%/4);
+        >div{
+            height: 268px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            >div{
+                img{
+                    width: 66px;
+                    height: 64px;
+                }
+            }
+            >p:nth-child(2){
+                font-size: 18px;
+                color: #b08f61;
+            }
+            >p:nth-child(3){
+                width: 82px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                color: #b08f61;
+                border-radius: 12px;
+                border: solid 2px #b08f61;
+            }
+        }
+    }
+}
+.slogan{
+    min-width:1190px;
+    color: #45a284;
+    font-size: 30px;
+    text-align: center;
+    font-family: yuweij;
+    margin:63px 0 44px 0;
+}
+.erCode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    >img{
+        width: 90px;
+        height: 90px;
+    }
+    >p{
+        color: #666666;
+        font-size: 12px;
+    }
+}
+.contact{
+    margin:130px 0 16px 0;
+    >p{
+        color: #666666;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+.record{
+    min-width:1190px;
+    height: 40px;
+    text-align: center;
+    background-color: #45a284;
+    >span{
+       color: #ffffff; 
+       font-size: 14px;
+       line-height:40px;
+    }
+}
