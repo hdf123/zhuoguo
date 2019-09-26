@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="icon" href="../img/logo.ico" type="image/x-icon"/>
+		<!--<link href="../img/logo.ico" rel="SHORTCUT ICON" />-->
 		<link rel="stylesheet" type="text/css" href="css/home.css"/>
 		<script src="../js/js.js" type="text/javascript" charset="utf-8"></script>
 	</head>
@@ -10,72 +12,66 @@
 		<header class="headers">
 			<div></div>
 			<div>
-				<img src="" alt="" />
+				<img src="../img/logo.png" alt="" />
 				<div class="nav">
 					<a href="javascript:;">
 						<p>关于啄果</p>
 						<p>About us</p>
+						<div class="navs">
+							<ul>
+								<li>公司简介</li>
+								<li>企业文化</li>
+							</ul>
+						</div>
 					</a>
 					<a href="javascript:;">
 						<p>产品系列</p>
 						<p>Product series</p>
+						<div class="navs">
+							<ul>
+								<li>果茶</li>
+								<li>咖啡</li>
+							</ul>
+						</div>
 					</a>
 					<a href="javascript:;">
 						<p>加盟合作</p>
 						<p> Merchants join</p>
+						<div class="navs">
+							<ul>
+								<li>常见问题</li>
+								<li>加盟啄果</li>
+							</ul>
+						</div>
 					</a>
 					<a href="javascript:;">
 						<p>联系我们</p>
 						<p>Connection</p>
+						<div class="navs">
+							<ul>
+								<li>加入我们</li>
+								<li>联系方式</li>
+							</ul>
+						</div>
 					</a>
 				</div>
 			</div>
 		</header>
-		
-		
+
+
 		<section class="contents">
 			<a class="bans" href="javascript:;">
 				<img src="../img/test.png" alt="" />
 			</a>
 			<div class="menus">
-				<a href="javascript:;">
-					<div>
-						<div>
-							<img src="" alt="" />
-						</div>
-						<p>Culture</p>
-						<p>企业文化</p>
-					</div>
-				</a>
-				<a href="javascript:;">
-					<div>
-						<div>
-							<img src="" alt="" />
-						</div>
-						<p>Tea</p>
-						<p>美味果茶</p>
-					</div>
-				</a>
-				<a href="javascript:;">
-					<div>
-						<div>
-							<img src="" alt="" />
-						</div>
-						<p>Coffee</p>
-						<p>香浓咖啡</p>
-					</div>
-				</a>
-				<a href="javascript:;">
-					<div>
-						<div>
-							<img src="" alt="" />
-						</div>
-						<p>Join us</p>
-						<p>加盟合作</p>
-					</div>
-				</a>
+				<img src="../img/m1.png" alt="" />
+				<img src="../img/m2.png" alt="" />
+				<img src="../img/m3.png" alt="" />
+				<img src="../img/m4.png" alt="" />
 			</div>
-			<div class="slogan">一杯好茶敬生活</div>
+			<div class="slogan">
+				<img src="../img/texts.png" alt="" />
+			</div>
 			<div class="erCode">
 				<img src="" alt="" />
 				<p>微信 Wechat</p>
@@ -95,5 +91,26 @@
 				<span>备案号：365858565255598号</span>
 			</div>
 		</section>
+		
+		
+<script type="text/javascript">
+$(function(){
+	var ims="";
+	$(".menus>img").mouseover(function(){
+		ims=$(this).attr("src");
+		$(this).attr("src","../img/m4.png");
+    });
+    $(".menus>img").mouseout(function(){
+    	$(this).attr("src",ims);
+    });
+    
+    $(".nav>a").mouseover(function(){
+    	$(this).children("div").css("display","block");
+    })
+    $(".nav>a").mouseout(function(){
+    	$(this).children("div").css("display","none");
+    });
+})
+</script>
 	</body>
 </html>
