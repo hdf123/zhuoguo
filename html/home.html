@@ -19,8 +19,8 @@
 						<p>About us</p>
 						<div class="navs">
 							<ul>
-								<li>公司简介</li>
-								<li>企业文化</li>
+								<li inds="1">公司简介</li>
+								<li inds="2">企业文化</li>
 							</ul>
 						</div>
 					</a>
@@ -29,8 +29,8 @@
 						<p>Product series</p>
 						<div class="navs">
 							<ul>
-								<li>果茶</li>
-								<li>咖啡</li>
+								<li inds="3">果茶</li>
+								<li inds="4">咖啡</li>
 							</ul>
 						</div>
 					</a>
@@ -39,8 +39,8 @@
 						<p> Merchants join</p>
 						<div class="navs">
 							<ul>
-								<li>常见问题</li>
-								<li>加盟啄果</li>
+								<li inds="5">常见问题</li>
+								<li inds="6">加盟啄果</li>
 							</ul>
 						</div>
 					</a>
@@ -49,8 +49,8 @@
 						<p>Connection</p>
 						<div class="navs">
 							<ul>
-								<li>加入我们</li>
-								<li>联系方式</li>
+								<li inds="7">加入我们</li>
+								<li inds="8">联系方式</li>
 							</ul>
 						</div>
 					</a>
@@ -63,12 +63,106 @@
 			<a class="bans" href="javascript:;">
 				<img src="../img/test.png" alt="" />
 			</a>
-			<div class="menus">
-				<img src="../img/m1.png" alt="" />
-				<img src="../img/m2.png" alt="" />
-				<img src="../img/m3.png" alt="" />
-				<img src="../img/m4.png" alt="" />
-			</div>
+			<ul class="tab">
+				<!--首页-->
+				<li class="homes">
+					<div class="menus">
+						<img src="../img/m1.png" alt="" />
+						<img src="../img/m2.png" alt="" />
+						<img src="../img/m3.png" alt="" />
+						<img src="../img/m4.png" alt="" />
+					</div>
+				</li>
+				<!--公司简介-->
+				<li class="Introduction">
+					<ul>
+						<li>
+							<div>
+								公司简介<div></div>
+							</div>
+							<p>
+								啄果公司成立于2009年7月，集果饮生活加工产品研发
+								门店销售，产品培训于一体。
+								啄果公司成立于2009年7月，集果饮生活加工产品研发
+								门店销售，产品培训于一体。啄果公司成立于2009年7
+								月，集果饮生活加工产品研发门店销售，产品培训于一体
+								。啄果公司成立于2009年7月，集果饮生活加啄果公司
+								成立于2009年7月，集果饮生活加
+							</p>
+						</li>
+						<li>
+							<img src="" alt="" />
+						</li>
+					</ul>
+				</li>
+				<!--企业文化-->
+				<li class="culture">
+					<ul>
+						<li>
+							<div>
+								<div>
+									公司简介<div></div>
+								</div>
+								<p>
+									啄果公司成立于2009年7月，集果饮生活加工产品研发
+									门店销售，产品培训于一体。
+									啄果公司成立于2009年7月，集果饮生活加工产品研发
+									门店销售，产品培训于一体。啄果公司成立于2009年7
+									月，集果饮生活加工产品研发门店销售，产品培训于一体
+									。啄果公司成立于2009年7月，集果饮生活加啄果公司
+									成立于2009年7月，集果饮生活加
+								</p>
+							</div>
+							<div><img src="" alt="" /></div>
+						</li>
+						<li>
+							<div>
+								<img src="" alt="" />
+							</div>
+							<ul>
+								<li>
+									<p>企业使命</p>
+									<div></div>
+									<span>啄果公司集果饮生活加工产品研发门店销售，产品培训于一体</span>
+								</li>
+								<li>
+									<p>企业愿景</p>
+									<div></div>
+									<span>啄果公司集果饮生活加工产品研发门店销售，产品培训于一体</span>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li>
+									<p>核心价值观</p>
+									<div></div>
+									<span>啄果公司成立于2009年7月，集果饮生活加工产品研发</span>
+								</li>
+								<li>
+									<p>企业精神</p>
+									<div></div>
+									<span>啄果公司成立于2009年7月，集果饮生活加工产品研发</span>
+								</li>
+								<li>
+									<p>经营理念</p>
+									<div></div>
+									<span>啄果公司成立于2009年7月，集果饮生活加工产品研发</span>
+								</li>
+							</ul>
+							<div><img src="" alt="" /></div>
+						</li>
+					</ul>
+				</li>
+				<!--果茶-->
+				<li class="FruitTea">
+					<div>
+						<ul class="FruitTea_tab"></ul>
+						<ul class="FruitTea_tabs"></ul>
+					</div>
+				</li>
+			</ul>
+			
 			<div class="slogan">
 				<img src="../img/texts.png" alt="" />
 			</div>
@@ -95,6 +189,25 @@
 		
 <script type="text/javascript">
 $(function(){
+	for(i in guochad){
+		$(".FruitTea_tab").append(`<li>${guochad[i]}</li>`);
+	}
+	function funa(guocha){
+		console.log(guocha);
+		var tabs='';
+		for(var j=0;j<8;j++){
+			tabs+=`<li>
+					<img src="" alt="" />
+					<div>
+						<div>${guocha[0].title}</div>
+						<p>${guocha[0].content}</p>
+					</div>
+				</li>`;
+		}
+		$(".FruitTea_tabs").html(tabs);
+	}
+	funa(guocha1);
+//	首页
 	var ims="";
 	$(".menus>img").mouseover(function(){
 		ims=$(this).attr("src");
@@ -103,13 +216,42 @@ $(function(){
     $(".menus>img").mouseout(function(){
     	$(this).attr("src",ims);
     });
-    
+//  导航
     $(".nav>a").mouseover(function(){
     	$(this).children("div").css("display","block");
     })
     $(".nav>a").mouseout(function(){
     	$(this).children("div").css("display","none");
     });
+//  菜单
+    $(".navs li").click(function(){
+    	var inds=$(this).attr("inds");
+    	if(inds==4){
+    		inds=3;
+    		funa(guocha3);
+    		$(".FruitTea_tab>li").eq(3).addClass("act").siblings().removeClass("act");
+    	}else if(inds==3){
+    		funa(guocha1);
+    		$(".FruitTea_tab>li").eq(0).addClass("act").siblings().removeClass("act");
+    	}
+    	$(".tab>li").eq(inds).css("display","block").siblings().css("display","none");
+    })
+//  果茶菜单
+    $(".FruitTea_tab>li").click(function(){
+    	if($(this).index()==3){
+    		funa(guocha3);
+    	}else{
+    		funa(guocha1);
+    	}
+    	$(this).addClass("act").siblings().removeClass("act");
+    	
+    })
+    $(".contents").on("mouseover",".FruitTea_tabs>li",function(){
+    	$(this).children("div").css("display","block");
+    })
+    $(".contents").on("mouseout",".FruitTea_tabs>li",function(){
+    	$(this).children("div").css("display","none");
+    })
 })
 </script>
 	</body>
