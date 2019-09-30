@@ -262,6 +262,150 @@
   -webkit-line-clamp: 4;
 }
 
+.problem {
+  width: 1190px;
+  margin: 0 auto;
+}
+.problem > div {
+  margin-top: 78px;
+}
+.problem > div > p {
+  color: #45a284;
+  font-size: 24px;
+  line-height: 63px;
+}
+.problem > div > div {
+  width: 46px;
+  height: 4px;
+  background-color: #45a284;
+}
+.problem .list > li {
+  padding-top: 28px;
+}
+.problem .list > li > p {
+  padding: 10px 0;
+  color: #333333;
+  font-size: 16px;
+}
+.problem .list > li > span {
+  display: inline-block;
+  padding: 10px 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.joins {
+  width: 1190px;
+  margin: 0 auto;
+}
+.joins > div:nth-child(1) {
+  margin-top: 78px;
+}
+.joins > div:nth-child(1) > p {
+  color: #45a284;
+  font-size: 24px;
+  line-height: 63px;
+}
+.joins > div:nth-child(1) > div {
+  width: 46px;
+  height: 4px;
+  background-color: #45a284;
+}
+.joins > div:nth-child(2) {
+  margin-top: 25px;
+  display: flex;
+}
+.joins > div:nth-child(2) > img {
+  width: 468px;
+  height: 570px;
+}
+
+.SignUp {
+  margin-left: 68px;
+}
+.SignUp > div {
+  display: flex;
+  height: 38px;
+  margin-top: 30px;
+}
+.SignUp > div > div {
+  width: 122px;
+  color: #333333;
+  font-size: 16px;
+  line-height: 38px;
+  display: flex;
+}
+.SignUp > div > div label {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+.SignUp > div > div label > div {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #cccccc;
+  border: solid 1px #6f6f6f;
+  margin-right: 10px;
+}
+.SignUp > div > div label > div > div {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #6f6f6f;
+}
+.SignUp > div > div label input {
+  display: none;
+}
+.SignUp > div > div label span {
+  white-space: nowrap;
+}
+.SignUp > div > div label:nth-child(2) {
+  margin-left: 67px;
+}
+.SignUp > div > div label:nth-child(2) > div > div {
+  display: none;
+}
+.SignUp > div > input {
+  width: 403px;
+  padding: 0 10px;
+  color: #666666;
+  font-size: 14px;
+}
+.SignUp > div:nth-child(1) {
+  font-size: 24px;
+}
+.SignUp .texts {
+  height: 120px;
+}
+.SignUp .texts > textarea {
+  width: 403px;
+  height: 120px;
+  padding: 10px;
+  resize: none;
+  outline: none;
+}
+.SignUp .btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.SignUp .btn > input {
+  width: 189px;
+  height: 44px;
+  display: inline-block;
+  border-radius: 4px;
+}
+.SignUp .btn .btn1 {
+  margin-right: 25px;
+  background-color: #45a284;
+}
+.SignUp .btn .btn2 {
+  border: solid 1px #45a284;
+}
+
 .slogan {
   min-width: 1190px;
   margin: 63px 0 44px 0;

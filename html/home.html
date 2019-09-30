@@ -161,8 +161,70 @@
 						<ul class="FruitTea_tabs"></ul>
 					</div>
 				</li>
+				<li style="display:none;"></li>
+				<!--加盟常见问题-->
+				<li class="problem">
+					<div>
+						<p>常见问题</p>
+						<div></div>
+					</div>
+					<ul class="list"></ul>
+				</li>
+				<!--加盟啄果-->
+				<li class="joins">
+					<div>
+						<p>常见问题</p>
+						<div></div>
+					</div>
+					<div>
+						<img src="" alt="" />
+						<form class="SignUp">
+							<div>请您填写以下信息，我们将尽快与您联系</div>
+							<div>
+								<div>姓名：</div>
+								<input type="text" name="name" placeholder="请输入您的真实姓名" value="" />
+							</div>
+							<div>
+								<div>性别：</div>
+								<div>
+									<label>
+										<div>
+											<div></div>
+										</div>
+										<input type="radio" name="gender" value="先生" /><span>先生</span>
+									</label>
+									<label>
+										<div>
+											<div></div>
+										</div>
+										<input type="radio" name="gender" value="女士" /><span>女士</span>
+									</label>
+								</div>
+							</div>
+							<div>
+								<div>联系方式：</div>
+								<input type="text" name="phone" placeholder="请输入您的手机号" value="" />
+							</div>
+							<div>
+								<div>Email：</div>
+								<input type="text" name="email" placeholder="邮箱地址" value="" />
+							</div>
+							<div>
+								<div>意向开业区域：</div>
+								<input type="text" name="address" placeholder="意向开业地区" value="" />
+							</div>
+							<div class="texts">
+								<div>内容：</div>
+								<textarea name="content"></textarea>
+							</div>
+							<div class="btn">
+								<input type="button" class="btn1" value="提交" />
+								<input type="button" class="btn2" value="重置" />
+							</div>
+						</form>
+					</div>
+				</li>
 			</ul>
-			
 			<div class="slogan">
 				<img src="../img/texts.png" alt="" />
 			</div>
@@ -192,7 +254,7 @@ $(function(){
 	for(i in guochad){
 		$(".FruitTea_tab").append(`<li>${guochad[i]}</li>`);
 	}
-	function funa(guocha){
+	function funa(guocha){//果茶
 		console.log(guocha);
 		var tabs='';
 		for(var j=0;j<8;j++){
@@ -207,6 +269,13 @@ $(function(){
 		$(".FruitTea_tabs").html(tabs);
 	}
 	funa(guocha1);
+	//常见问题
+	for(i in problem){
+		$(".list").append(`<li>
+							<p>${Number(i)+1}、${problem[i].title}</p>
+							<span>答：${problem[i].content}</span>
+						</li>`);
+	}
 //	首页
 	var ims="";
 	$(".menus>img").mouseover(function(){
@@ -226,6 +295,7 @@ $(function(){
 //  菜单
     $(".navs li").click(function(){
     	var inds=$(this).attr("inds");
+    	console.log(inds);
     	if(inds==4){
     		inds=3;
     		funa(guocha3);
@@ -252,6 +322,16 @@ $(function(){
     $(".contents").on("mouseout",".FruitTea_tabs>li",function(){
     	$(this).children("div").css("display","none");
     })
+//  加盟
+    $(".btn1").click(function(){
+		var dats = {};
+		var vals = $('form').serializeArray();
+		$.each(vals, function (){
+		    dats[this.name] = this.value;
+		});
+		console.log(dats);
+    })
+    
 })
 </script>
 	</body>

@@ -23,8 +23,6 @@ input{
     border: none;
     /*3.添加边框*/
     border: 1px solid #ccc;
-    /*4.解决iphone safari上的圆角和渐变问题*/
-    -webkit-appearance : none ;  
 }
 /* 让链接默认不显示下划线， */
 a{
@@ -74,13 +72,6 @@ a{
 /*placeholder样式*/
 .input::-webkit-input-placeholder {
     text-align:center;
-}
-input::-webkit-inner-spin-button {/*解决input的type="number"在部分手机端会出现一个小按钮*/
-    -webkit-appearance: none;/*去除系统默认appearance的样式,常用于IOS下移除原生样式*/
-}
-
-input::-webkit-outer-spin-button {/*解决input的type="number"在部分手机端会出现一个小按钮*/
-    -webkit-appearance: none;
 }
 /*隐藏滚动条*/
 .scroll_bar::-webkit-scrollbar {
