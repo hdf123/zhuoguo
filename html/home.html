@@ -186,16 +186,16 @@
 							</div>
 							<div>
 								<div>性别：</div>
-								<div>
+								<div class="gender">
 									<label>
 										<div>
-											<div></div>
+											<div class="actk act"></div>
 										</div>
-										<input type="radio" name="gender" value="先生" /><span>先生</span>
+										<input type="radio" name="gender" value="先生" checked="checked" /><span>先生</span>
 									</label>
 									<label>
 										<div>
-											<div></div>
+											<div class="actk"></div>
 										</div>
 										<input type="radio" name="gender" value="女士" /><span>女士</span>
 									</label>
@@ -323,6 +323,14 @@ $(function(){
     	$(this).children("div").css("display","none");
     })
 //  加盟
+	$(".gender>label").click(function(){
+		console.log($(this).index());
+		if($(this).children("input").is(':checked')){
+			console.log(2222);
+			$(this).find(".actk").addClass("act");
+			$(this).siblings("label").find(".actk").removeClass("act");
+		}
+	})
     $(".btn1").click(function(){
 		var dats = {};
 		var vals = $('form').serializeArray();
@@ -331,7 +339,11 @@ $(function(){
 		});
 		console.log(dats);
     })
-    
+    $(".btn2").click(function(){
+    	$('form')[0].reset();
+    	$(".gender>label:eq(0)").find(".actk").addClass("act");
+    	$(".gender>label:eq(1)").find(".actk").removeClass("act");
+    })
 })
 </script>
 	</body>

@@ -351,7 +351,7 @@
   border: solid 1px #6f6f6f;
   margin-right: 10px;
 }
-.SignUp > div > div label > div > div {
+.SignUp > div > div label > div .act {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -365,9 +365,6 @@
 }
 .SignUp > div > div label:nth-child(2) {
   margin-left: 67px;
-}
-.SignUp > div > div label:nth-child(2) > div > div {
-  display: none;
 }
 .SignUp > div > input {
   width: 403px;

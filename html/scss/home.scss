@@ -365,7 +365,7 @@
                     background-color: #cccccc;
                     border: solid 1px #6f6f6f;
                     margin-right:10px;
-                    >div{
+                    .act{
                         width: 12px;
                         height: 12px;
                         border-radius:50%;
@@ -381,11 +381,6 @@
             }
             label:nth-child(2){
                 margin-left:67px;
-                >div{
-                    >div{
-                        display: none;
-                    }
-                }
             }
         }
         >input{
