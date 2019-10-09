@@ -97,7 +97,7 @@
   width: 330px;
   margin-right: 209px;
 }
-.Introduction > ul > li:nth-child(1) > div {
+.Introduction > ul > li:nth-child(1) > div > h6 {
   color: #45a284;
   font-size: 24px;
   line-height: 65px;
@@ -132,7 +132,7 @@
   width: 330px;
   padding: 13px 50px 0 30px;
 }
-.culture > ul > li:nth-child(1) > div:nth-child(1) > div, .culture > ul > li:nth-child(3) > div:nth-child(1) > div {
+.culture > ul > li:nth-child(1) > div:nth-child(1) > div > h6, .culture > ul > li:nth-child(3) > div:nth-child(1) > div > h6 {
   color: #45a284;
   font-size: 24px;
   line-height: 51px;
@@ -164,7 +164,7 @@
   flex-direction: column;
   align-items: flex-end;
 }
-.culture > ul > li:nth-child(2) > ul > li > p {
+.culture > ul > li:nth-child(2) > ul > li > h6 {
   color: #45a284;
   font-size: 24px;
   line-height: 63px;
@@ -182,7 +182,7 @@
 .culture > ul > li:nth-child(3) {
   margin-top: 183px;
 }
-.culture > ul > li:nth-child(3) > ul > li > p {
+.culture > ul > li:nth-child(3) > ul > li > h6 {
   color: #45a284;
   font-size: 24px;
   line-height: 63px;
@@ -269,7 +269,7 @@
 .problem > div {
   margin-top: 78px;
 }
-.problem > div > p {
+.problem > div > h6 {
   color: #45a284;
   font-size: 24px;
   line-height: 63px;
@@ -301,7 +301,7 @@
 .joins > div:nth-child(1) {
   margin-top: 78px;
 }
-.joins > div:nth-child(1) > p {
+.joins > div:nth-child(1) > h6 {
   color: #45a284;
   font-size: 24px;
   line-height: 63px;
@@ -401,6 +401,60 @@
 }
 .SignUp .btn .btn2 {
   border: solid 1px #45a284;
+}
+
+.together {
+  width: 1190px;
+  margin: 0 auto;
+}
+.together > div:nth-child(1) {
+  margin-top: 78px;
+}
+.together > div:nth-child(1) > h6 {
+  color: #45a284;
+  font-size: 24px;
+  line-height: 63px;
+}
+.together > div:nth-child(1) > div {
+  width: 46px;
+  height: 4px;
+  background-color: #45a284;
+}
+.together > div:nth-child(1) > p {
+  color: #000000;
+  font-size: 14px;
+  line-height: 22px;
+}
+.together > div:nth-child(1) > p:nth-child(3) {
+  padding-top: 24px;
+}
+
+.professional {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.professional > li {
+  margin-top: 50px;
+  width: 485px;
+}
+.professional > li > h6 {
+  color: #45a284;
+  font-size: 24px;
+  line-height: 45px;
+}
+.professional > li > div > p {
+  color: #333333;
+  font-size: 14px;
+  line-height: 25px;
+}
+.professional > li > div ul li {
+  color: #333333;
+  font-size: 14px;
+  line-height: 25px;
+}
+.professional > li > div:nth-child(3) {
+  margin-top: 30px;
 }
 
 .slogan {
