@@ -31,7 +31,7 @@ $(function(){
 	var ims="";
 	$(".menus>img").mouseover(function(){
 		ims=$(this).attr("src");
-		$(this).attr("src","../img/m4.png");
+		$(this).attr("src","../img/zzz.jpg");
     });
     $(".menus>img").mouseout(function(){
     	$(this).attr("src",ims);
