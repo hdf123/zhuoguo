@@ -6,13 +6,14 @@
     top:0;
     left:0;
     background:white;
+    z-index:99;
     >div:nth-child(1){
         width:100%;
         height:8px;
         background-color: #45a284;
     }
     >div:nth-child(2){
-        width:1190px;
+        width:1200px;
         margin:0 auto;
         display: flex;
         align-items: center;
@@ -64,7 +65,7 @@
         width:100%;
         img{
             width:100%;
-            min-width:1190px;
+            min-width:1200px;
         }
     }
     >.tab{
@@ -80,7 +81,7 @@
     .menus{
         width:100%;
         font-size:0;
-        min-width:1190px;
+        min-width:1200px;
         >img{
             width:calc(100%/4);
             vertical-align:top;
@@ -91,10 +92,10 @@
 //公司简介
 .Introduction{
     >ul{
-        width:1190px;
+        width:1200px;
         margin:0 auto;
         display: flex;
-        padding-top:78px;
+        padding:78px 25px 0 25px;
         >li:nth-child(1){
             width:330px;
             margin-right:209px;
@@ -127,9 +128,9 @@
 //企业文化
 .culture{
     >ul{
-        width:1190px;
+        width:1200px;
         margin:0 auto;
-        padding-top:68px;
+        padding:68px 25px 0 25px;
         >li:nth-child(1),>li:nth-child(3){
             display: flex;
             justify-content: space-between;
@@ -223,7 +224,7 @@
 //果茶
 .FruitTea{
     >div{
-        width:1190px;
+        width:1200px;
         margin:0 auto;
     }
 }
@@ -245,10 +246,11 @@
     display: flex;
     flex-wrap: wrap;
     >li{
-        width: 297px;
+        width:300px;
         height: 268px;
         position: relative;
-        padding:5px;
+        padding:2px;
+        font-size:0;
         >img{
             width:100%;
             height:100%;
@@ -257,10 +259,10 @@
         >div{
             display:none;
             position: absolute;
-            top:5px;
-            left: 5px;
-            right:5px;
-            bottom:5px;
+            top:2px;
+            left: 2px;
+            right:2px;
+            bottom:2px;
             padding:29px;
             background:rgba(0,0,0,0.3);
             >div{
@@ -285,8 +287,9 @@
 }
 //加盟常见问题
 .problem{
-    width:1190px;
+    width:1200px;
     margin:0 auto;
+    padding:0 25px;
     >div{
         margin-top:78px;
         >h6{
@@ -319,8 +322,9 @@
 }
 //加盟啄果
 .joins{
-    width:1190px;
+    width:1200px;
     margin:0 auto;
+    padding:0 25px;
     >div:nth-child(1){
         margin-top:78px;
         >h6{
@@ -427,30 +431,33 @@
 }
 //加入我们
 .together{
-    width:1190px;
-    margin:0 auto;
     >div:nth-child(1){
-        margin-top:78px;
-        >h6{
-            color: #45a284;
-            font-size: 24px;
-            line-height:63px;
-        }
-        >div{
-            width: 46px;
-            height: 4px;
-            background-color: #45a284;
-        }
-        >p{
-            color: #000000;
-            font-size: 14px;
-            line-height: 22px;
-        }
-        >p:nth-child(3){
-            padding-top:24px;
-        }
-        >p:nth-child(4){
+        width:1200px;
+        margin:0 auto;
+        padding:0 25px;
+        >div:nth-child(1){
+            margin-top:78px;
+            >h6{
+                color: #45a284;
+                font-size: 24px;
+                line-height:63px;
+            }
+            >div{
+                width: 46px;
+                height: 4px;
+                background-color: #45a284;
+            }
+            >p{
+                color: #000000;
+                font-size: 14px;
+                line-height: 22px;
+            }
+            >p:nth-child(3){
+                padding-top:24px;
+            }
+            >p:nth-child(4){
             
+            }
         }
     }
 }
@@ -485,8 +492,41 @@
         }
     }
 }
+.imgs{
+    width:100%;
+    min-width:1200px;
+    font-size:0;
+    margin:66px 0 187px 0;
+    >img{
+        display: inline-block;
+    }
+    >img:nth-child(1),>img:nth-child(2){
+        width:50%;
+    }
+    >img:nth-child(3),>img:nth-child(4),>img:nth-child(5){
+        width:calc(100% / 3);
+    }
+}
+.ContactUs{
+    width:1200px;
+    margin:0 auto;
+    padding:0 25px 40px 25px;
+    >div{
+        padding:30px 0;
+        border-bottom:1px solid #dddddd;
+        >h6{
+            color: #45a284;
+            font-size: 24px;
+        }
+        >p{
+            margin-top:18px;
+            color: #333333;
+            font-size: 14px;
+        }
+    }
+}
 .slogan{
-    min-width:1190px;
+    min-width:1200px;
     margin:63px 0 44px 0;
     >img{
         width:205px;
@@ -495,6 +535,7 @@
     }
 }
 .erCode{
+    min-width:1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -509,6 +550,7 @@
     }
 }
 .contact{
+    min-width:1200px;
     margin:130px 0 16px 0;
     >p{
         color: #666666;
@@ -517,7 +559,7 @@
     }
 }
 .record{
-    min-width:1190px;
+    min-width:1200px;
     height: 40px;
     text-align: center;
     background-color: #45a284;
