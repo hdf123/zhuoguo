@@ -2,6 +2,12 @@ $(function(){
 	$(".logo").click(function(){
 		$(".tab>li").eq(0).css("display","block").siblings().css("display","none");
 	})
+	var mySwiper1 = new Swiper('.swiper1', {
+		autoplay: 1000,//可选选项，自动滑动
+		speed:1000,
+		loop : true,
+		pagination : '.swiper-pagination',
+	})
 	for(i in guochad){
 		$(".FruitTea_tab").append(`<li>${guochad[i]}</li>`);
 	}
@@ -31,7 +37,7 @@ $(function(){
 	var ims="";
 	$(".menus>img").mouseover(function(){
 		ims=$(this).attr("src");
-		$(this).attr("src","../img/zzz.jpg");
+		$(this).attr("src","../img/a1.png");
     });
     $(".menus>img").mouseout(function(){
     	$(this).attr("src",ims);
