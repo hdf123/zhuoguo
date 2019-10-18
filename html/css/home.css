@@ -107,13 +107,14 @@
   display: inline-block;
 }
 
-.Introduction > .bans {
+.bans {
   width: 100%;
 }
-.Introduction > .bans img {
+.bans img {
   width: 100%;
   min-width: 1200px;
 }
+
 .Introduction > ul {
   width: 1200px;
   margin: 0 auto;
@@ -290,62 +291,62 @@
   -webkit-line-clamp: 4;
 }
 
-.problem {
+.problem > div {
   width: 1200px;
   margin: 0 auto;
   padding: 0 25px;
 }
-.problem > div {
+.problem > div > div {
   margin-top: 78px;
 }
-.problem > div > h6 {
+.problem > div > div > h6 {
   color: #45a284;
   font-size: 24px;
   line-height: 63px;
 }
-.problem > div > div {
+.problem > div > div > div {
   width: 46px;
   height: 4px;
   background-color: #45a284;
 }
-.problem .list > li {
+.problem > div .list > li {
   padding-top: 28px;
 }
-.problem .list > li > p {
+.problem > div .list > li > p {
   padding: 10px 0;
   color: #333333;
   font-size: 16px;
 }
-.problem .list > li > span {
+.problem > div .list > li > span {
   display: inline-block;
   padding: 10px 0;
   color: #666666;
   font-size: 14px;
 }
 
-.joins {
+.joins > div {
   width: 1200px;
   margin: 0 auto;
   padding: 0 25px;
 }
-.joins > div:nth-child(1) {
+.joins > div > div:nth-child(1) {
   margin-top: 78px;
 }
-.joins > div:nth-child(1) > h6 {
+.joins > div > div:nth-child(1) > h6 {
   color: #45a284;
   font-size: 24px;
   line-height: 63px;
 }
-.joins > div:nth-child(1) > div {
+.joins > div > div:nth-child(1) > div {
   width: 46px;
   height: 4px;
   background-color: #45a284;
 }
-.joins > div:nth-child(2) {
+.joins > div > div:nth-child(2) {
   margin-top: 25px;
   display: flex;
 }
-.joins > div:nth-child(2) > img {
+.joins > div > div:nth-child(2) > img {
   width: 468px;
   height: 570px;
 }
@@ -422,42 +423,45 @@
 .SignUp .btn > input {
   width: 189px;
   height: 44px;
+  font-size: 16px;
   display: inline-block;
   border-radius: 4px;
 }
 .SignUp .btn .btn1 {
+  color: #ffffff;
   margin-right: 25px;
   background-color: #45a284;
 }
 .SignUp .btn .btn2 {
+  color: #45a284;
   background: none;
   border: solid 1px #45a284;
 }
 
-.together > div:nth-child(1) {
+.together > div:nth-child(2) {
   width: 1200px;
   margin: 0 auto;
   padding: 0 25px;
 }
-.together > div:nth-child(1) > div:nth-child(1) {
+.together > div:nth-child(2) > div:nth-child(1) {
   margin-top: 78px;
 }
-.together > div:nth-child(1) > div:nth-child(1) > h6 {
+.together > div:nth-child(2) > div:nth-child(1) > h6 {
   color: #45a284;
   font-size: 24px;
   line-height: 63px;
 }
-.together > div:nth-child(1) > div:nth-child(1) > div {
+.together > div:nth-child(2) > div:nth-child(1) > div {
   width: 46px;
   height: 4px;
   background-color: #45a284;
 }
-.together > div:nth-child(1) > div:nth-child(1) > p {
+.together > div:nth-child(2) > div:nth-child(1) > p {
   color: #000000;
   font-size: 14px;
   line-height: 22px;
 }
-.together > div:nth-child(1) > div:nth-child(1) > p:nth-child(3) {
+.together > div:nth-child(2) > div:nth-child(1) > p:nth-child(3) {
   padding-top: 24px;
 }
 
@@ -505,20 +509,20 @@
   width: calc(100% / 3);
 }
 
-.ContactUs {
+.ContactUs ul {
   width: 1200px;
   margin: 0 auto;
   padding: 0 25px 40px 25px;
 }
-.ContactUs > div {
+.ContactUs ul > li {
   padding: 30px 0;
   border-bottom: 1px solid #dddddd;
 }
-.ContactUs > div > h6 {
+.ContactUs ul > li > h6 {
   color: #45a284;
   font-size: 24px;
 }
-.ContactUs > div > p {
+.ContactUs ul > li > p {
   margin-top: 18px;
   color: #333333;
   font-size: 14px;

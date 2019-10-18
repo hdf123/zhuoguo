@@ -108,15 +108,15 @@
         }
     }
 }
+.bans{
+    width:100%;
+    img{
+        width:100%;
+        min-width:1200px;
+    }
+}
 //公司简介
 .Introduction{
-    >.bans{
-        width:100%;
-        img{
-            width:100%;
-            min-width:1200px;
-        }
-    }
     >ul{
         width:1200px;
         margin:0 auto;
@@ -313,63 +313,67 @@
 }
 //加盟常见问题
 .problem{
-    width:1200px;
-    margin:0 auto;
-    padding:0 25px;
     >div{
-        margin-top:78px;
-        >h6{
-            color: #45a284;
-            font-size: 24px;
-            line-height:63px;
-        }
+        width:1200px;
+        margin:0 auto;
+        padding:0 25px;
         >div{
-            width: 46px;
-            height: 4px;
-            background-color: #45a284;
-        }
-    }
-    .list{
-        >li{
-            padding-top:28px;
-            >p{
-                padding:10px 0;
-                color: #333333;
-                font-size: 16px;
+            margin-top:78px;
+            >h6{
+                color: #45a284;
+                font-size: 24px;
+                line-height:63px;
             }
-            >span{
-                display: inline-block;
-                padding:10px 0;
-                color: #666666;
-                font-size: 14px;
+            >div{
+                width: 46px;
+                height: 4px;
+                background-color: #45a284;
+            }
+        }
+        .list{
+            >li{
+                padding-top:28px;
+                >p{
+                    padding:10px 0;
+                    color: #333333;
+                    font-size: 16px;
+                }
+                >span{
+                    display: inline-block;
+                    padding:10px 0;
+                    color: #666666;
+                    font-size: 14px;
+                }
             }
         }
     }
 }
 //加盟啄果
 .joins{
-    width:1200px;
-    margin:0 auto;
-    padding:0 25px;
-    >div:nth-child(1){
-        margin-top:78px;
-        >h6{
-            color: #45a284;
-            font-size: 24px;
-            line-height:63px;
+    >div{
+        width:1200px;
+        margin:0 auto;
+        padding:0 25px;
+        >div:nth-child(1){
+            margin-top:78px;
+            >h6{
+                color: #45a284;
+                font-size: 24px;
+                line-height:63px;
+            }
+            >div{
+                width: 46px;
+                height: 4px;
+                background-color: #45a284;
+            }
         }
-        >div{
-            width: 46px;
-            height: 4px;
-            background-color: #45a284;
-        }
-    }
-    >div:nth-child(2){
-        margin-top:25px;
-        display: flex;
-        >img{
-            width: 468px;
-            height: 570px;
+        >div:nth-child(2){
+            margin-top:25px;
+            display: flex;
+            >img{
+                width: 468px;
+                height: 570px;
+            }
         }
     }
 }
@@ -443,14 +447,17 @@
         >input{
             width: 189px;
             height: 44px;
+            font-size: 16px;
             display: inline-block;
             border-radius: 4px;
         }
         .btn1{
+            color: #ffffff;
             margin-right:25px;
             background-color: #45a284;
         }
         .btn2{
+            color: #45a284;
             background:none;
             border: solid 1px #45a284;
         }
@@ -458,7 +465,7 @@
 }
 //加入我们
 .together{
-    >div:nth-child(1){
+    >div:nth-child(2){
         width:1200px;
         margin:0 auto;
         padding:0 25px;
@@ -535,20 +542,22 @@
     }
 }
 .ContactUs{
-    width:1200px;
-    margin:0 auto;
-    padding:0 25px 40px 25px;
-    >div{
-        padding:30px 0;
-        border-bottom:1px solid #dddddd;
-        >h6{
-            color: #45a284;
-            font-size: 24px;
-        }
-        >p{
-            margin-top:18px;
-            color: #333333;
-            font-size: 14px;
+    ul{
+        width:1200px;
+        margin:0 auto;
+        padding:0 25px 40px 25px;
+        >li{
+            padding:30px 0;
+            border-bottom:1px solid #dddddd;
+            >h6{
+                color: #45a284;
+                font-size: 24px;
+            }
+            >p{
+                margin-top:18px;
+                color: #333333;
+                font-size: 14px;
+            }
         }
     }
 }
