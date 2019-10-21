@@ -46,7 +46,7 @@ a {
 }
 
 /*单行隐藏*/
-.yincang, .wdows > div, #wdows > div {
+.yincang {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
