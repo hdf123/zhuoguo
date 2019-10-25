@@ -36,17 +36,42 @@ $(function(){
 //	首页
 	var ims="";
 	$(".menus>img").mouseover(function(){
-		ims=$(this).attr("src");
-		$(this).attr("src","../img/a1.png");
+		$(this).fadeOut(function(){
+			ims=$(this).attr("src");
+			$(this).attr("src","../img/a1.png");
+			$(this).fadeIn(300);
+		});
     });
     $(".menus>img").mouseout(function(){
-    	$(this).attr("src",ims);
+    	$(this).fadeOut(function(){
+    		$(this).attr("src",ims);
+    		$(this).fadeIn(300);
+    	});
     });
+    $(".menus>img").click(function(){
+    	var ind=$(this).index();
+    	console.log(ind);
+    	if(ind==0){//企业文化
+    		$(".tab>li").eq(2).css("display","block").siblings().css("display","none");
+    	}else if(ind==1){//果茶
+    		funa(guocha1);
+    		$(".FruitTea_tab>li").eq(0).addClass("act").siblings().removeClass("act");
+    		$(".tab>li").eq(3).css("display","block").siblings().css("display","none");
+    	}else if(ind==2){//咖啡
+    		funa(guocha3);
+    		$(".FruitTea_tab>li").eq(3).addClass("act").siblings().removeClass("act");
+    		$(".tab>li").eq(3).css("display","block").siblings().css("display","none");
+    	}else if(ind==3){//加盟合作
+    		$(".tab>li").eq(6).css("display","block").siblings().css("display","none");
+    	}
+    })
 //  导航
     $(".nav>a").mouseover(function(){
+    	$(this).children("p").css("opacity","0.5");
     	$(this).children("div").css("display","block");
     })
     $(".nav>a").mouseout(function(){
+    	$(this).children("p").css("opacity","1");
     	$(this).children("div").css("display","none");
     });
 //  菜单
@@ -102,5 +127,5 @@ $(function(){
     	$(".gender>label:eq(1)").find(".actk").removeClass("act");
     })
 //  加入
-
+   
 })
