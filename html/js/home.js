@@ -3,7 +3,7 @@ $(function(){
 		$(".tab>li").eq(0).css("display","block").siblings().css("display","none");
 	})
 	var mySwiper1 = new Swiper('.swiper1', {
-		autoplay: 1000,//可选选项，自动滑动
+		autoplay: 1000,
 		speed:1000,
 		loop : true,
 		pagination : '.swiper-pagination',
