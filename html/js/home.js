@@ -36,6 +36,9 @@ $(function(){
 //	首页
 	var ims="";
 	$(".menus>img").mouseover(function(){
+		
+		console.log($(this).index());
+		
 		$(this).fadeOut(function(){
 			ims=$(this).attr("src");
 			$(this).attr("src","../img/a1.png");
