@@ -277,6 +277,8 @@ function selectSwiper(obj) {
 /**
  * 省市联动
  */
+
+
 function linkage(address){
 	var newData = [];//新数据
 	var citysArray = [];//城市
@@ -284,7 +286,8 @@ function linkage(address){
 	var chooseMenuStr = '请选择' //添加选择title
 	function init(){
 		//模拟ajax
-		setTimeout(()=>{
+		setTimeout(function(){
+//		setTimeout(()=>{
 			newData = [...shengshi];
 			// 初始化省份
 			var optionGroupOne = "";
@@ -386,7 +389,8 @@ function linkage(address){
 		$(this).siblings().find('.checked').hide();
 		$(".option-menu").eq(parentIndex).text(areaName)
 		$(".modal-main").animate({"bottom":"-900px"}, 400);
-		setTimeout(()=>{
+		setTimeout(function(){
+//		setTimeout(()=>{
 			$("#mymodal").fadeOut()
 		},350)
 		address.val(addressVal);
@@ -397,7 +401,8 @@ function linkage(address){
 	})
 	$(".close").on("click",function(){
 		$(".modal-main").animate({"bottom":"-900px"}, 400);
-		setTimeout(()=>{
+		setTimeout(function(){
+//		setTimeout(()=>{
 			$("#mymodal").fadeOut();
 		},350)
 	})
@@ -405,7 +410,8 @@ function linkage(address){
 		var modalMain = $(".modal-main");
 		if (!modalMain.is(event.target)&& modalMain.has(event.target).length === 0) {
 			$(".modal-main").animate({"bottom":"-900px"}, 400);
-			setTimeout(()=>{
+			setTimeout(function(){
+//			setTimeout(()=>{
 				$("#mymodal").fadeOut();
 			},350)
 		}

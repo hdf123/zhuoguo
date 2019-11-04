@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        position:relative;
+    }
+    .container>img{
+        display:block;
+        width:100%;
+        height:auto;
+    }
+    .first{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+    .second{
+        position:absolute;
+        top:0;
+        left:25%;
+        width:25%;
+        height:100%;
+        border-left:2px solid white;
+        border-right:1px solid white;
+        transform: skew(-11deg);
+    }
+    .third{
+        position:absolute;
+        top:0;
+        left:50%;
+        width:25%;
+        height:100%;
+        border-left:1px solid white;
+        border-right:2px solid white;
+        transform: skew(-11deg);
+    }
+    .forth{
+        margin-left:50%;
+        width:50%;
+        height:100%;
+    }
+</style>
+	<body>
+	    <div class="container">
+	        <img id="background" src="../img/banner1.png" alt=""/>
+	        <div class="first">
+	            <div class="forth"></div>
+	            <div class="second"></div>
+	            <div class="third"></div>
+	        </div>
+	    </div>
+	    
+<script type="text/javascript">
+	$(".first").mouseover(function (e) {
+	    var str = e.target.className||e.target.nodeName;
+	    if (str == "first") console.log("first")
+	    if (str == "second") console.log("second")
+	    if (str == "third") console.log("third")
+	    if (str == "forth") console.log("forth")
+	});
+</script>
+	</body>
+</html>

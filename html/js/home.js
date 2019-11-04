@@ -1,4 +1,5 @@
 $(function(){
+	console.log(12);
 	$(".logo").click(function(){
 		$(".tab>li").eq(0).css("display","block").siblings().css("display","none");
 	})
@@ -9,29 +10,29 @@ $(function(){
 		pagination : '.swiper-pagination',
 	})
 	for(i in guochad){
-		$(".FruitTea_tab").append(`<li>${guochad[i]}</li>`);
+		$(".FruitTea_tab").append("<li>"+guochad[i]+"</li>");
 	}
 	function funa(guocha){//果茶
 		console.log(guocha);
 		var tabs='';
 		for(var j=0;j<8;j++){
-			tabs+=`<li>
-					<img src="" alt="" />
-					<div>
-						<div>${guocha[0].title}${j+1}</div>
-						<p>${guocha[0].content}</p>
-					</div>
-				</li>`;
+			tabs+='<li>'
+					+'<img src="" alt="" />'
+					+'<div>'
+						+'<div>'+guocha[0].title+(j+1)+'</div>'
+						+'<p>'+guocha[0].content+'</p>'
+					+'</div>'
+				+'</li>';
 		}
 		$(".FruitTea_tabs").html(tabs);
 	}
 	funa(guocha1);
 	//常见问题
 	for(i in problem){
-		$(".list").append(`<li>
-							<p>${Number(i)+1}、${problem[i].title}</p>
-							<span>答：${problem[i].content}</span>
-						</li>`);
+		$(".list").append('<li>'
+							+'<p>'+(Number(i)+1)+'、'+problem[i].title+'</p>'
+							+'<span>答：'+problem[i].content+'</span>'
+						+'</li>');
 	}
 //	首页
 	var ims="";
