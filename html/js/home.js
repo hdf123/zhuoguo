@@ -1,5 +1,4 @@
 $(function(){
-	console.log(12);
 	$(".logo").click(function(){
 		$(".tab>li").eq(0).css("display","block").siblings().css("display","none");
 	})
@@ -44,13 +43,13 @@ $(function(){
 			ims=$(this).attr("src");
 			$(this).attr("src","../img/a1.png");
 			$(this).fadeIn(300);
-		});
+		},0);
     });
     $(".menus>img").mouseout(function(){
     	$(this).fadeOut(function(){
     		$(this).attr("src",ims);
     		$(this).fadeIn(300);
-    	});
+    	},0);
     });
     $(".menus>img").click(function(){
     	var ind=$(this).index();
@@ -78,6 +77,15 @@ $(function(){
     	$(this).children("p").css("opacity","1");
     	$(this).children("div").css("display","none");
     });
+    $(".nav li").mouseover(function(){
+    	$(this).css("color","rgba(255,255,255,0.7)");
+    })
+    $(".nav li").mouseout(function(){
+    	$(this).css("color","rgba(255,255,255,1)");
+    })
+    
+    
+    
 //  菜单
     $(".navs li").click(function(){
     	var inds=$(this).attr("inds");
