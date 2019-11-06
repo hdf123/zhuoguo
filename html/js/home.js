@@ -114,14 +114,14 @@ $(function(){
     $(".contents").on("mouseenter",".FruitTea_tabs>li",function(){
 //  	$(this).children("div").css("display","block");
     	
-		$(this).children("div").fadeIn(30);
+		$(this).children("div").fadeIn(300);
     	
     	
     })
     $(".contents").on("mouseleave",".FruitTea_tabs>li",function(){
 //  	$(this).children("div").css("display","none");
     	
-		$(this).children("div").fadeOut(300);
+		$(this).children("div").fadeOut(30);
     	
     })
 //  加盟
