@@ -94,7 +94,7 @@ input {
 .swiper1 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background-color: #b08f61;
+  background: #b08f61;
   opacity: 0.35;
 }
 .swiper1 .swiper-pagination-bullet-active {

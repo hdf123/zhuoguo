@@ -110,11 +110,19 @@ $(function(){
     	$(this).addClass("act").siblings().removeClass("act");
     	
     })
-    $(".contents").on("mouseover",".FruitTea_tabs>li",function(){
-    	$(this).children("div").css("display","block");
+    $(".contents .FruitTea_tabs>li").hide();
+    $(".contents").on("mouseenter",".FruitTea_tabs>li",function(){
+//  	$(this).children("div").css("display","block");
+    	
+		$(this).children("div").fadeIn(30);
+    	
+    	
     })
-    $(".contents").on("mouseout",".FruitTea_tabs>li",function(){
-    	$(this).children("div").css("display","none");
+    $(".contents").on("mouseleave",".FruitTea_tabs>li",function(){
+//  	$(this).children("div").css("display","none");
+    	
+		$(this).children("div").fadeOut(300);
+    	
     })
 //  加盟
 	$(".gender>label").click(function(){

@@ -92,7 +92,9 @@ input{
     .swiper-pagination-bullet{
         width: 10px;
         height: 10px;
-        background-color: #b08f61;
+//      background-color: #b08f61;
+        background:rgba(176,143,97,1);
+        
         opacity: 0.35;
     }
     .swiper-pagination-bullet-active{
@@ -615,3 +617,9 @@ input{
        line-height:40px;
     }
 }
+
+
+//1.页面简洁大方，内容越多越长越不想看
+//2.分类清晰,目标定位简单（无思考选择，不能给人一种层次太深的感觉）
+//3.产品背景，小故事
+//4.一点点的配色，鹿角巷的页面，素匠泰茶加盟门店查看，贡茶整体布局
