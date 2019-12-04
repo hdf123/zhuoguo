@@ -134,41 +134,46 @@ $(function(){
 	$("[name=phone]").blur(function(){//电话验证
 		var pho=$(this).val();
 		var df=/^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\d{8}$/;//手机号正则
-		df.test(pho)?p1=true:funa();
-		function funa(){
+		if(df.test(pho)){
+			p1=true;
+			$(".phone>div:eq(1)").removeClass("xs");
+		}else{
 			$(".phone>div:eq(1)").addClass("xs");
 			console.log("手机号输入错误");
 		}
 	})
 	$("[name=email]").blur(function(){//邮箱验证
 		var email=$(this).val();
-		var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/;//邮箱正则
-		reg.test(email)?e1=true:funb();
-		function funb(){
+		var reg = /^\w+((\.\w+){0,3})@\w+(\.\w{2,3}){1,3}$/;//邮箱正则
+//		var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/;//邮箱正则
+		if(reg.test(email)){
+			e1=true;
+			$(".email>div:eq(1)").removeClass("xs");
+		}else{
 			$(".email>div:eq(1)").addClass("xs");
 			console.log("邮箱格式错误");
 		}
 	})
     $(".btn1").click(function(){
-    	var name=$("[name=name]").val();
-    	var phone=$("[name=phone]").val();
-    	var email=$("[name=email]").val();
-    	var address=$("[name=address]").val();
-    	var content=$("[name=content]").val();
-    	if(name==""||phone==""||email==""||address==""||content==""){
+    	var name=$("[name=name]").val();//名字
+    	var phone=$("[name=phone]").val();//联系方式
+    	var email=$("[name=email]").val();//邮箱
+    	var address=$("[name=address]").val();//意向区域
+    	var content=$("[name=content]").val();//内容
+    	if(name==""||phone==""||email==""||address==""){
     		return alert("内容不可为空");
+    	}else{
+    		if(p1&&e1){
+				var dats = {};
+				var vals = $('form').serializeArray();
+				$.each(vals, function (){
+				    dats[this.name] = this.value;
+				});
+				console.log(dats);
+    		}else{
+    			console.log(222);
+    		}
     	}
-		if(p1&&e1){
-			console.log(111);
-		}else{
-			console.log(222);
-		}
-		var dats = {};
-		var vals = $('form').serializeArray();
-		$.each(vals, function (){
-		    dats[this.name] = this.value;
-		});
-		console.log(dats);
     })
     $(".btn2").click(function(){
     	$('form')[0].reset();
