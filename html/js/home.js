@@ -17,7 +17,7 @@ $(function(){
 		var tabs='';
 		for(var j=0;j<8;j++){
 			tabs+='<li>'
-					+'<img src="" alt="" />'
+					+'<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1999921673,816131569&fm=26&gp=0.jpg" alt="" />'
 					+'<div>'
 						+'<div>'+guocha[0].title+(j+1)+'</div>'
 						+'<p>'+guocha[0].content+'</p>'
@@ -35,22 +35,13 @@ $(function(){
 						+'</li>');
 	}
 //	首页
-	var ims="";
+	var ims1="";
 	$(".menus>img").mouseover(function(){
-		
-		console.log($(this).index());
-		
-		$(this).fadeOut(function(){
-			ims=$(this).attr("src");
-			$(this).attr("src","../img/a1.png");
-			$(this).fadeIn(300);
-		},0);
+		ims=$(this).attr("src");
+		$(this).attr("src","../img/a1.png");
     });
     $(".menus>img").mouseout(function(){
-    	$(this).fadeOut(function(){
-    		$(this).attr("src",ims);
-    		$(this).fadeIn(300);
-    	},0);
+		$(this).attr("src",ims);
     });
     $(".menus>img").click(function(){
     	var ind=$(this).index();

@@ -9,12 +9,9 @@
     /*把此元素放置在父元素的中部。*/
     vertical-align: middle;
     box-sizing: border-box;
-    /*去除移动端特有的点击高亮效果*/
-    -webkit-tap-highlight-color: transparent;
 }
 img{
     display:block;
-    background:rgba(199,199,199,0.3);
 }
 input{
     /*1.清除文本框获取焦点时默认的边框阴影*/
